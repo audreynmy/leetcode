@@ -1,6 +1,7 @@
 var searchRange = function (nums, target) {
   //needs to run 2 times binary search to find leftmost and rightmost index
   //if leftBias === true, search will continue to left of array to find leftmost index where left = right = mid
+  //O(log(n)) complexity for binary search
   const binarySearch = (leftBias) => {
     let left = 0,
       right = nums.length - 1;
